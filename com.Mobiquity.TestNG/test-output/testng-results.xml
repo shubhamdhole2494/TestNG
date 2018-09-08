@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-09-06T15:10:30Z" name="Default suite" finished-at="2018-09-06T15:10:30Z" duration-ms="31">
+    <groups>
+    </groups>
+    <test started-at="2018-09-06T15:10:30Z" name="Default test" finished-at="2018-09-06T15:10:30Z" duration-ms="31">
+      <class name="com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation">
+        <test-method signature="testMethod1()[pri:0, instance:com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation@6f4a47c7]" started-at="2018-09-06T20:40:30Z" name="testMethod1" finished-at="2018-09-06T20:40:30Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod2()[pri:0, instance:com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation@6f4a47c7]" started-at="2018-09-06T20:40:30Z" name="testMethod2" finished-at="2018-09-06T20:40:30Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method signature="testMethod3()[pri:0, instance:com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation@6f4a47c7]" started-at="2018-09-06T20:40:30Z" name="testMethod3" finished-at="2018-09-06T20:40:30Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+      </class> <!-- com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
