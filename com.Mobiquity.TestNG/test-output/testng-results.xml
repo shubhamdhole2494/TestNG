@@ -1,25 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> This runs once before class]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> This runs before every method]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> testMethod2]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> This runs after every method]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> This runs before every method]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> testMethod1]]>
+    </line>
+    <line>
+      <![CDATA[Test log]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> This runs after every method]]>
+    </line>
+    <line>
+      <![CDATA[TestNG_ReportsAndLogs -> This runs once after class]]>
+    </line>
   </reporter-output>
-  <suite started-at="2018-09-06T15:10:30Z" name="Default suite" finished-at="2018-09-06T15:10:30Z" duration-ms="31">
+  <suite started-at="2018-09-08T15:01:42Z" name="Default suite" finished-at="2018-09-08T15:01:42Z" duration-ms="154">
     <groups>
     </groups>
-    <test started-at="2018-09-06T15:10:30Z" name="Default test" finished-at="2018-09-06T15:10:30Z" duration-ms="31">
-      <class name="com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation">
-        <test-method signature="testMethod1()[pri:0, instance:com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation@6f4a47c7]" started-at="2018-09-06T20:40:30Z" name="testMethod1" finished-at="2018-09-06T20:40:30Z" duration-ms="9" status="PASS">
+    <test started-at="2018-09-08T15:01:42Z" name="Default test" finished-at="2018-09-08T15:01:42Z" duration-ms="154">
+      <class name="com.Mobiquity.TestNG.TestNG_ReportsAndLogs">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="setUp" finished-at="2018-09-08T15:01:42Z" duration-ms="27" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> This runs once before class]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method signature="testMethod2()[pri:0, instance:com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation@6f4a47c7]" started-at="2018-09-06T20:40:30Z" name="testMethod2" finished-at="2018-09-06T20:40:30Z" duration-ms="2" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="beforeMethod" finished-at="2018-09-08T15:01:42Z" duration-ms="1" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> This runs before every method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod2()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="testMethod2" finished-at="2018-09-08T15:01:42Z" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at com.Mobiquity.TestNG.TestNG_ReportsAndLogs.testMethod2(TestNG_ReportsAndLogs.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> testMethod2]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testMethod2 -->
-        <test-method signature="testMethod3()[pri:0, instance:com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation@6f4a47c7]" started-at="2018-09-06T20:40:30Z" name="testMethod3" finished-at="2018-09-06T20:40:30Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="afterMethod" finished-at="2018-09-08T15:01:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> This runs after every method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="beforeMethod" finished-at="2018-09-08T15:01:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> This runs before every method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testMethod1()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="testMethod1" finished-at="2018-09-08T15:01:42Z" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> testMethod1]]>
+            </line>
+            <line>
+              <![CDATA[Test log]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="afterMethod" finished-at="2018-09-08T15:01:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> This runs after every method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testMethod3()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="testMethod3" finished-at="2018-09-08T15:01:42Z" depends-on-methods="com.Mobiquity.TestNG.TestNG_ReportsAndLogs.testMethod2" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG_ReportsAndLogs.testMethod3()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG_ReportsAndLogs.testMethod3()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:887)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMethod3 -->
-      </class> <!-- com.Mobiquity.com.Mobiquity.TestNG.TestAnnotation -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.Mobiquity.TestNG.TestNG_ReportsAndLogs@38e79ae3]" started-at="2018-09-08T15:01:42Z" name="cleanUp" finished-at="2018-09-08T15:01:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[TestNG_ReportsAndLogs -> This runs once after class]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.Mobiquity.TestNG.TestNG_ReportsAndLogs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

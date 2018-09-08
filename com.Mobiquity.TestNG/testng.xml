@@ -1,0 +1,12 @@
+<suite name="Regression TestSuite">
+<test name="Application Test">
+	<classes>
+		<class name="com.Mobiquity.TestNG.TestNG_TestClass1"></class>
+			<methods>
+				<exclude name="testMethod1" />
+			</methods>
+		<class name="com.Mobiquity.TestNG.TestNG_TestClass2"></class>
+	</classes>
+</test>
+</suite>
+
