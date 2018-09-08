@@ -35,6 +35,8 @@ public class RequestSpecificationDemo {
 		given()
 		.spec(requestSpec)
 		//.header("x-api-key","")
+		//.header("x-api-key","")
+
 		//.contentType("application/json")
 		.when()
 			.get("/admin/venues")
