@@ -1,4 +1,4 @@
-package com.Mobiquity.com.Mobiquity.TestNG;
+package com.Mobiquity.TestNG;
 import org.testng.annotations.*;
 
 //import appcode.SomeClassToTest;
